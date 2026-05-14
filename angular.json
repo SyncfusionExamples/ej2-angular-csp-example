@@ -57,17 +57,17 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "syncfusion-angular-csp:build:production"
-            },
-            "development": {
-              "browserTarget": "syncfusion-angular-csp:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
+  "builder": "@angular-devkit/build-angular:dev-server",
+  "configurations": {
+    "development": {
+      "buildTarget": "syncfusion-angular-csp:build:development"
+    },
+    "production": {
+      "buildTarget": "syncfusion-angular-csp:build:production"
+    }
+  },
+  "defaultConfiguration": "development"
+},
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
