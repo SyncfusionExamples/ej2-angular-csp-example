@@ -1,33 +1,42 @@
 # Syncfusion Angular CSP Sample
 
-This application showcases the Syncfusion Angular Grid component implemented with a strict Content Security Policy (CSP).
+This repository provides a minimal Angular sample that integrates the Syncfusion Grid while following CSP constraints. It illustrates the configuration and runtime patterns needed to avoid inline scripts/styles and to register Syncfusion modules in a CSP-friendly way. The README links to official CSP guidance for details.
 
-To learn more about Content Security Policy (CSP), refer to the [Syncfusion Angular CSP documentation](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/content-security-policy).
+## Features
 
-## Getting Started
+- Example of using Syncfusion Angular Grid with CSP-conscious application setup
+- Links to Syncfusion CSP documentation for troubleshooting and guidance
+- Minimal sample structure intended for local experimentation and testing
+- Clear developer workflow for installing, running and validating CSP behavior
 
-* To clone the sample app repository locally, open the command prompt in the desired location and execute the following command.
+## Prerequisites
 
-```sh
+- Node.js (LTS) installed on the development machine
+- Angular CLI (recommended) for local development workflows
+- A Syncfusion license or trial configured if required by the components
 
-git clone https://github.com/SyncfusionExamples/ej2-angular-csp-example.git
+Refer to the Syncfusion React/Angular docs for licensing and component configuration: https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/content-security-policy
 
-```
+## Installation and Run
 
-* Navigate to the project directory:
+1. Clone the repository and change into the project folder:
 
-```sh
-cd ej2-angular-csp-example
-```
+   ```bash
+   git clone https://github.com/SyncfusionExamples/ej2-angular-csp-example.git
+   cd ej2-angular-csp-example
+   ```
 
-## Installing Packages
+2. Install dependencies using your package manager o
 
-Install the required node modules by running the following command:
+   ```bash
+   npm install
+   ```
 
-```sh
-npm install
-```
+3. Start the development server 
 
-## Development server
-
-To start the development server, run the command `ng serve`. Then, open your web browser and navigate to `http://localhost:4200/` to access the application. The application will automatically reload whenever you make changes to the source files.
+   - With Angular CLI:
+    ```bash
+     ng serve
+     ```
+     
+ then open http://localhost:4200/
